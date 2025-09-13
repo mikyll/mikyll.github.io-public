@@ -1,0 +1,157 @@
+baseURL: "/"
+languageCode: en-us
+theme: "hello-friend-ng"
+
+title: "Michele Righi"
+copyright: '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+module:
+  mounts:
+  - disableWatch: false
+    excludeFiles: null
+    includeFiles: null
+    lang: ""
+    source: private/archetypes
+    target: archetypes
+  - disableWatch: false
+    excludeFiles: null
+    includeFiles: null
+    lang: ""
+    source: private/assets
+    target: assets
+  - disableWatch: false
+    excludeFiles: null
+    includeFiles: null
+    lang: ""
+    source: private/content
+    target: content
+  - disableWatch: false
+    excludeFiles: null
+    includeFiles: null
+    lang: ""
+    source: private/layouts
+    target: layouts
+
+pagination:
+  pagerSize: 10
+
+params:
+  welcomeMessage: "Ciao!<br/>I'm Michele Righi"
+  homeSubtitle: |
+    Welcome to my website! I am a DevOps Engineer from San Marino, with a MSc degree in
+    Computer Engineering from the University of Bologna (Alma Mater Studiorum).
+    I have a passion for game development and I love contributing to open-source projects.
+  author:
+    name: "Michele Righi"
+  dateform: "Jan 2, 2006"
+  dateformShort: "Jan 2"
+  dateformNum: "2006-01-02"
+  dateformNumTime: "2006-01-02 15:04"
+  enableThemeToggle: true
+  disableReadOtherPosts: false
+  enableSharingButtons: true
+  enableGlobalLanguageMenu: true
+  defaultContentLanguage: "en"
+  languagesDir: "i18n"
+  description: "My personal website"
+  keywords: "homepage, blog, portfolio"
+  images: [""]
+
+  favicon:
+    mask: "#1b1c1d"
+    msapplication: "#1b1c1d"
+    theme: "#1b1c1d"
+
+  portrait:
+    path: "/gfx/avatar.png"
+    #pathHQ: "/gfx/avatar_hq.png"
+    #maxWidth: 2000
+
+  logo:
+    logoMark: "$"
+    #logoCursorColor: "#51f0fe"
+    #logoCursorColor: "#54fe51"
+    #logoPath: true
+    logoHomeText: "welcome"
+    logoHomeFile: "welcome"
+    logoTextHover: "welcome/"
+    logoHomeLink: "/"
+
+  footer:
+    trademark: "2025"
+    author: true
+    copyright: '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    rss: true
+    topText: []
+    bottomText: []
+    #- "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+    #- "Theme by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+
+  social:
+    - name: "GitHub"
+      icon: "github"
+      url: "https://github.com/mikyll"
+    - name: "StackOverflow"
+      icon: "stackoverflow"
+      url: "https://stackoverflow.com/users/19544859"
+    - name: "LeetCode"
+      icon: "leetcode"
+      url: "https://leetcode.com/Mikyll/"
+    - name: "LinkedIn"
+      icon: "linkedin"
+      url: "https://linkedin.com/in/michele-righi"
+    - name: "Instagram"
+      icon: "instagram"
+      url: "https://instagram.com/mikyll98/"
+    - name: "YouTube"
+      icon: "youtube"
+      url: "https://youtube.com/user/mikyll98"
+    - name: "E-mail"
+      icon: "email"
+      url: "mailto:righi.michele98@gmail.com"
+
+taxonomies:
+  category: "blog"
+  tag: "tags"
+  series: "series"
+
+languages:
+  en:
+    #title: "Welcome"
+    params:
+      keywords: ""
+      readOtherPosts: "Read other posts"
+  it:
+    #title: "Benvenuto"
+    params:
+      welcomeMessage: "Ciao!<br/>Sono Michele Righi"
+      homeSubtitle: |
+        Benvenuto nel mio sito web!
+        Sono un Ingegnere DevOps di San Marino, con una laurea magistrale in
+        Ingegneria Informatica presso l'Università di Bologna (Alma Mater Studiorum).
+        Ho una passione per lo sviluppo di videogiochi e adoro contribuire ai progetti
+        open source.
+      readOtherPosts: "Leggi altri post"
+  es:
+    #title: "Benvenuto"
+    params:
+      welcomeMessage: "Ciao!<br/>Soy Michele Righi"
+      homeSubtitle: |
+        ¡Bienvenido a mi sitio web!
+        Soy un Ingeniero DevOps de San Marino, con un título de Máster en
+        Ingeniería Informática de la Universidad de Bolonia (Alma Mater Studiorum).
+        Me apasiona el desarrollo de videojuegos y me encanta contribuir a proyectos de 
+        código abierto.
+      readOtherPosts: "Leer otras publicaciones"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      url: "/about"
+    - identifier: "blog"
+      name: "Blog"
+      url: "/posts"
+    - identifier: "portfolio"
+      name: "Portfolio"
+      url: "/projects"
